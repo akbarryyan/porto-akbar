@@ -3,7 +3,7 @@ import { BiAlignLeft } from "react-icons/bi";
 
 function Navbar() {
   return (
-    <div className="bg-#FFFFFF shadow-md">
+    <div className="bg-#FFFFFF">
       <nav className="flex justify-between items-center py-4 px-6">
         <BiAlignLeft className="text-[22px] cursor-pointer md:hidden" />
         <ul className="gap-8 bg-#FFFFFF py-1 px-4 rounded-md border-2 border-[#E5E7EB] hidden md:flex">

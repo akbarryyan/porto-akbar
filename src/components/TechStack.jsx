@@ -15,23 +15,25 @@ import { LiaGithub } from "react-icons/lia";
 function TechStack() {
   return (
     <>
-      <h1 className="text-2xl font-bold">Tech Stack</h1>
-      <p className="text-[14px] mt-1">Some stacks I have use in my projects.</p>
-      <div className="flex justify-center items-center mt-3 ml-3">
+      <h1 className="text-2xl font-bold dark:text-white">Tech Stack</h1>
+      <p className="text-[14px] mt-1 dark:text-white">
+        Some stacks I have use in my projects.
+      </p>
+      <div className="flex items-center mt-3 ml-3">
         <div className="grid grid-cols-6 gap-4">
-          <BiLogoPhp className="text-3xl" />
-          <DiJavascript1 className="text-3xl" />
-          <BiLogoTailwindCss className="text-3xl" />
-          <BiLogoBootstrap className="text-3xl" />
-          <BiLogoReact className="text-3xl" />
-          <FaLaravel className="text-3xl" />
-          <BiLogoJquery className="text-3xl" />
-          <SiXampp className="text-3xl" />
-          <TiHtml5 className="text-3xl" />
-          <IoLogoCss3 className="text-3xl" />
-          <LiaGithub className="text-3xl" />
-          <SiMysql className="text-3xl" />
-          <SiVite className="text-3xl" />
+          <BiLogoPhp className="text-3xl dark:text-white" />
+          <DiJavascript1 className="text-3xl dark:text-white" />
+          <BiLogoTailwindCss className="text-3xl dark:text-white" />
+          <BiLogoBootstrap className="text-3xl dark:text-white" />
+          <BiLogoReact className="text-3xl dark:text-white" />
+          <FaLaravel className="text-3xl dark:text-white" />
+          <BiLogoJquery className="text-3xl dark:text-white" />
+          <SiXampp className="text-3xl dark:text-white" />
+          <TiHtml5 className="text-3xl dark:text-white" />
+          <IoLogoCss3 className="text-3xl dark:text-white" />
+          <LiaGithub className="text-3xl dark:text-white" />
+          <SiMysql className="text-3xl dark:text-white" />
+          <SiVite className="text-3xl dark:text-white" />
         </div>
       </div>
     </>

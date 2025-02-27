@@ -1,23 +1,41 @@
-import { useState } from "react";
-import { BiMoon, BiMenuAltLeft, BiX } from "react-icons/bi";
+import { useState, useEffect } from "react";
+import { BiMenuAltLeft, BiX } from "react-icons/bi";
+import { IoColorPaletteOutline } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isPaletteOpen, setIsPaletteOpen] = useState(false);
+  const [theme, setTheme] = useState("light");
+
+  // Fungsi untuk mengubah tema
+  const toggleTheme = (selectedTheme) => {
+    setTheme(selectedTheme);
+    setIsPaletteOpen(false); // Menutup palette setelah memilih tema
+  };
+
+  // Efek untuk mengubah kelas CSS pada elemen body
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark"); // Ubah body ke html
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
 
   return (
-    <div className="bg-white relative">
+    <div className="bg-white dark:bg-[#181818] relative">
       <nav className="flex justify-between items-center py-4 px-6 lg:px-32 lg:py-5">
         {/* Menu Toggle untuk Mobile */}
         <div className="md:hidden">
           {isOpen ? (
             <BiX
-              className="text-[24px] cursor-pointer"
+              className="text-[24px] cursor-pointer dark:text-white"
               onClick={() => setIsOpen(false)}
             />
           ) : (
             <BiMenuAltLeft
-              className="text-[24px] cursor-pointer"
+              className="text-[24px] cursor-pointer dark:text-white"
               onClick={() => setIsOpen(true)}
             />
           )}
@@ -42,21 +60,27 @@ function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile Menu Tetap Terlihat */}
+        {/* Mobile Menu dan Palette Toggle */}
         <div className="flex items-center gap-10 md:hidden">
           <ul className="gap-8 flex">
-            <li className="cursor-pointer text-[14px] text-gray-600 font-semibold underline-offset-4 hover:underline hover:text-neutral-800">
+            <li className="cursor-pointer text-[14px] text-gray-600 font-semibold underline-offset-4 hover:underline hover:text-neutral-800 dark:text-gray-200">
               Home
             </li>
-            <li className="cursor-pointer text-[14px] text-gray-600 font-semibold underline-offset-4 hover:underline hover:text-neutral-800">
+            <li className="cursor-pointer text-[14px] text-gray-600 font-semibold underline-offset-4 hover:underline hover:text-neutral-800 dark:text-gray-200">
               Projects
             </li>
           </ul>
-          <BiMoon className="text-[20px] md:text-[25px] cursor-pointer" />
+          <IoColorPaletteOutline
+            className="text-[20px] md:text-[25px] cursor-pointer text-[#15171F] dark:text-white"
+            onClick={() => setIsPaletteOpen(!isPaletteOpen)}
+          />
         </div>
 
         {/* Dark Mode Toggle (Desktop) */}
-        <BiMoon className="text-[24px] cursor-pointer hidden md:flex" />
+        <IoColorPaletteOutline
+          className="text-[24px] text-black cursor-pointer hidden md:flex dark:text-white"
+          onClick={() => setIsPaletteOpen(!isPaletteOpen)}
+        />
       </nav>
 
       {/* Navbar Links (Mobile) dengan Animasi */}
@@ -100,6 +124,35 @@ function Navbar() {
               Contact
             </li>
           </motion.ul>
+        )}
+      </AnimatePresence>
+
+      {/* Color Palette Menu */}
+      <AnimatePresence>
+        {isPaletteOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="absolute right-4 top-16 w-40 bg-white shadow-md p-4 rounded-md border border-gray-300"
+          >
+            <p className="text-gray-700 font-semibold">Theme Options</p>
+            <ul className="mt-2 flex flex-col gap-2">
+              <li
+                className="cursor-pointer text-sm text-gray-600 hover:text-neutral-800"
+                onClick={() => toggleTheme("light")}
+              >
+                Light Mode
+              </li>
+              <li
+                className="cursor-pointer text-sm text-gray-600 hover:text-neutral-800"
+                onClick={() => toggleTheme("dark")}
+              >
+                Dark Mode
+              </li>
+            </ul>
+          </motion.div>
         )}
       </AnimatePresence>
     </div>

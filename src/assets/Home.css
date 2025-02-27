@@ -1,30 +1,30 @@
+:root {
+  --grid-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --grid-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Warna grid lebih cerah di dark mode */
+}
+
 #background {
   content: "";
-  position: absolute;
+  position: relative;
   width: 320px;
   height: 400px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-image: linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
   background-size: 30px 30px;
   background-position: center;
   z-index: -1;
-  left: 40px;
-  top: 48px;
+  left: 24px;
+  top: -40px;
   animation: moveGrid 5s infinite linear;
 }
-
-/* Animasi grid tetap berjalan */
-/* @keyframes moveGrid {
-  0% {
-    background-position: center;
-  }
-  50% {
-    background-position: calc(50% + 22px) calc(50% + 22px);
-  }
-  100% {
-    background-position: center;
-  }
-} */
 
 /* Responsiveness */
 
@@ -33,7 +33,7 @@
   #background {
     width: 480px;
     height: 400px;
-    background-size: 35px 35px; /* Grid lebih besar */
+    background-size: 35px 35px;
     left: 90px;
     top: 50px;
   }

@@ -2,12 +2,62 @@
   content: "";
   position: absolute;
   width: 320px;
-  height: 300px;
+  height: 400px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
   background-size: 30px 30px;
   background-position: center;
   z-index: -1;
   left: 40px;
-  top: 45px;
+  top: 48px;
+  animation: moveGrid 5s infinite linear;
+}
+
+/* Animasi grid tetap berjalan */
+/* @keyframes moveGrid {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: calc(50% + 22px) calc(50% + 22px);
+  }
+  100% {
+    background-position: center;
+  }
+} */
+
+/* Responsiveness */
+
+/* Ukuran layar >= 640px (sm) */
+@media (min-width: 640px) {
+  #background {
+    width: 480px;
+    height: 400px;
+    background-size: 35px 35px; /* Grid lebih besar */
+    left: 90px;
+    top: 50px;
+  }
+}
+
+/* Ukuran layar >= 768px (md) */
+@media (min-width: 768px) {
+  #background {
+    width: 480px;
+    height: 400px;
+    background-size: 40px 40px;
+    left: 140px;
+    top: 60px;
+  }
+}
+
+/* Ukuran layar >= 1024px (lg) */
+@media (min-width: 1024px) {
+  #background {
+    width: 540px;
+    height: 420px;
+    background-size: 35px 35px;
+    left: 32%;
+    top: 10px;
+    animation: none;
+  }
 }

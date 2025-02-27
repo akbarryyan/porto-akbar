@@ -12,16 +12,18 @@ function Home() {
       id="background"
     >
       <div>
-        <h1 className="text-3xl text-[#525252]">Hello there!</h1>
+        <h1 className="text-3xl text-[#525252] tracking-wide font-semibold">
+          Hello there!
+        </h1>
         <BlurText
           text="I am Akbar"
           delay={250}
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
-          className="text-2xl font-semibold flex justify-center items-center my-3"
+          className="text-3xl font-semibold flex justify-center items-center my-3"
         />
-        <p className="text-[15px]">
+        <p className="text-[15px] text-[#5C5C5C] lg:text-[17px]">
           I&apos;m <span className="font-semibold">Junior Developer</span> from
           Indramayu, West Java, Indonesia. <br />
           I&apos;m self-learning person who is interested in developing Discord

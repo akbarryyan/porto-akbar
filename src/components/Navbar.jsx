@@ -56,7 +56,7 @@ function Navbar() {
         </div>
 
         {/* Dark Mode Toggle (Desktop) */}
-        <BiMoon className="text-[24px] cursor-pointer hidden lg:flex" />
+        <BiMoon className="text-[24px] cursor-pointer hidden md:flex" />
       </nav>
 
       {/* Navbar Links (Mobile) dengan Animasi */}

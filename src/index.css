@@ -4,10 +4,15 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant light (&:where(.light, .light *));
 @custom-variant retro (&:where(.retro, .retro *));
+@custom-variant valentine (&:where(.valentine, .valentine *));
 
 /* Konfigurasi tema */
 @layer base {
   .retro {
     background-color: #ece3ca; /* Kuning Retro */
+  }
+
+  .valentine {
+    background-color: #fae7f4; /* Pink Valentine */
   }
 }

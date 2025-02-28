@@ -18,7 +18,7 @@ function Home() {
         id="background"
       >
         <div className="ml-[-30px] sm:ml-[10px]">
-          <h1 className="text-3xl text-[#525252] dark:text-[#DFE0E2] retro:text-[#282425] retro:font-bold tracking-wide font-semibold dark:font-bold">
+          <h1 className="text-3xl text-[#525252] dark:text-[#DFE0E2] retro:text-[#282425] retro:font-bold tracking-wide font-semibold dark:font-bold valentine:text-[#9F2547]">
             Hello there!
           </h1>
           <BlurText

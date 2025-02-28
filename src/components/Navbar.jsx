@@ -26,7 +26,7 @@ function Navbar() {
   }, [theme]);
 
   return (
-    <div className="bg-white dark:bg-[#181818] retro:bg-[#E4D8B4] valentine:bg-[#F2D7E7] relative">
+    <div className="bg-white dark:bg-[#181818] retro:bg-[#E4D8B4] valentine:bg-[#F2D7E7]">
       <nav className="flex justify-between items-center py-4 px-6 lg:px-32 lg:py-5">
         {/* Menu Toggle untuk Mobile */}
         <div className="md:hidden">

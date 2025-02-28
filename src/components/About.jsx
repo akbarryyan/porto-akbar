@@ -15,7 +15,7 @@ function About() {
   return (
     <div className="flex items-center justify-center">
       <div
-        className="w-full max-w-lg bg-white dark:bg-[#181818] retro:bg-[#E4D8B4] border rounded shadow-lg py-3 transition-colors duration-300"
+        className="w-full max-w-lg bg-white dark:bg-[#181818] retro:bg-[#E4D8B4] valentine:bg-[#F2D7E7] border rounded shadow-lg py-3 transition-colors duration-300"
         style={{ boxShadow: "5px 5px" }}
       >
         {[

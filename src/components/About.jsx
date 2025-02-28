@@ -14,7 +14,10 @@ function About() {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="w-full max-w-lg bg-white dark:bg-[#181818] retro:bg-[#E4D8B4] border border-gray-300 dark:border-gray-600 rounded shadow-lg py-3 transition-colors duration-300">
+      <div
+        className="w-full max-w-lg bg-white dark:bg-[#181818] retro:bg-[#E4D8B4] border rounded shadow-lg py-3 transition-colors duration-300"
+        style={{ boxShadow: "5px 5px" }}
+      >
         {[
           { id: "about", title: "About Me", icon: <RiUserFollowLine /> },
           {

@@ -88,7 +88,8 @@ function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -30 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="absolute top-[60px] left-4 w-48 bg-white shadow-md flex flex-col items-start gap-3 py-4 px-4 rounded-md border border-gray-300 transition-all duration-300 dark:bg-[#181818] retro:bg-[#E4D8B4]"
+            className="absolute top-[60px] left-4 w-48 bg-white shadow-md flex flex-col items-start gap-3 py-4 px-4 rounded-md border transition-all duration-300 dark:bg-[#181818] retro:bg-[#E4D8B4]"
+            style={{ boxShadow: "5px 5px" }}
           >
             <li className="text-[15px] text-gray-700 dark:text-white retro:text-[#352f44] font-semibold cursor-pointer hover:underline">
               Home
@@ -117,7 +118,8 @@ function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="absolute right-4 top-16 w-40 bg-white shadow-md p-4 rounded-md border border-gray-300 dark:bg-[#181818] retro:bg-[#E4D8B4]"
+            className="absolute right-4 top-16 w-40 bg-white p-4 rounded-md border dark:bg-[#181818] retro:bg-[#E4D8B4]"
+            style={{ boxShadow: "5px 5px" }}
           >
             <p className="text-gray-700 dark:text-white retro:text-[#352f44] font-semibold">
               Theme Options

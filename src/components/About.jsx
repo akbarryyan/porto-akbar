@@ -71,10 +71,31 @@ function About() {
                   </div>
                 )}
                 {id === "education" && (
-                  <div className="retro:text-[#59534A]">
-                    <p>University: [Your University Name]</p>
-                    <p>Major: [Your Major]</p>
-                    <p>Year of Study: [Your Year]</p>
+                  <div className="relative retro:text-[#59534A]">
+                    <div className="border-l-2 border-gray-400 dark:border-gray-600 space-y-4">
+                      <div className="relative">
+                        <div className="absolute -left-2 top-0 w-4 h-4 bg-gray-600 dark:bg-gray-400 rounded-full"></div>
+                        <div className="flex flex-col ml-4">
+                          <p className="font-semibold">2021 - 2025</p>
+                          <p>University of Technology</p>
+                          <p>Major: Computer Science</p>
+                        </div>
+                      </div>
+                      <div className="relative">
+                        <div className="absolute -left-2 top-0 w-4 h-4 bg-gray-600 dark:bg-gray-400 rounded-full"></div>
+                        <div className="flex flex-col ml-4">
+                          <p className="font-semibold">2018 - 2021</p>
+                          <p>Senior High School XYZ</p>
+                        </div>
+                      </div>
+                      <div className="relative">
+                        <div className="absolute -left-2 top-0 w-4 h-4 bg-gray-600 dark:bg-gray-400 rounded-full"></div>
+                        <div className="flex flex-col ml-4">
+                          <p className="font-semibold">2015 - 2018</p>
+                          <p>Junior High School ABC</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 )}
               </motion.div>

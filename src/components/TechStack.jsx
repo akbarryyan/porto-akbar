@@ -15,12 +15,12 @@ import { LiaGithub } from "react-icons/lia";
 function TechStack() {
   return (
     <>
-      <h1 className="text-2xl font-bold dark:text-white">Tech Stack</h1>
+      <h1 className="text-xl font-bold dark:text-white">Tech Stack</h1>
       <p className="text-[14px] mt-1 dark:text-white">
-        Some stacks I have use in my projects.
+        Some stacks & tools I have use in my projects.
       </p>
-      <div className="flex items-center mt-3 ml-3">
-        <div className="grid grid-cols-6 gap-4">
+      <div className="flex items-center mt-4 ml-3">
+        <div className="grid grid-cols-6 gap-4 mt-1">
           <BiLogoPhp className="text-3xl dark:text-white" />
           <DiJavascript1 className="text-3xl dark:text-white" />
           <BiLogoTailwindCss className="text-3xl dark:text-white" />

@@ -56,11 +56,11 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-[-40px]">
-        <div className="mb-8 px-4">
-          <TechStack />
+      <div className="mt-[-80px]">
+        <div className="mb-12">
+          <About />
         </div>
-        <About />
+        <TechStack />
       </div>
     </>
   );

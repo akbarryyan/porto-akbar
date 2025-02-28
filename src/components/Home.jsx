@@ -3,6 +3,7 @@ import DecryptedText from "../TextAnimations/DecryptedText/DecryptedText";
 import About from "../components/About";
 import TechStack from "../components/TechStack";
 import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
 import "../assets/Home.css";
 
 const handleAnimationComplete = () => {
@@ -60,7 +61,10 @@ function Home() {
         <div className="mb-12">
           <About />
         </div>
-        <TechStack />
+        <div className="mb-12">
+          <TechStack />
+        </div>
+        <Contact />
       </div>
     </>
   );

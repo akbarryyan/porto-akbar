@@ -1,4 +1,13 @@
 @import "tailwindcss";
 
+/* Variants untuk mode */
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant light (&:where(.light, .light *));
+@custom-variant retro (&:where(.retro, .retro *));
+
+/* Konfigurasi tema */
+@layer base {
+  .retro {
+    background-color: #ece3ca; /* Kuning Retro */
+  }
+}

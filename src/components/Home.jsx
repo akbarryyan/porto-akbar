@@ -18,7 +18,7 @@ function Home() {
         id="background"
       >
         <div className="ml-[-30px] sm:ml-[10px]">
-          <h1 className="text-3xl text-[#525252] dark:text-[#DFE0E2] tracking-wide font-semibold dark:font-bold">
+          <h1 className="text-3xl text-[#525252] dark:text-[#DFE0E2] retro:text-[#282425] retro:font-bold tracking-wide font-semibold dark:font-bold">
             Hello there!
           </h1>
           <BlurText
@@ -27,11 +27,11 @@ function Home() {
             animateBy="words"
             direction="top"
             onAnimationComplete={handleAnimationComplete}
-            className="text-3xl font-semibold flex justify-center items-center my-3 dark:text-white"
+            className="text-3xl font-semibold flex justify-center items-center my-3 dark:text-white retro:text-[#625D56]"
           />
 
           {/* Example 3: Animate on view (runs once) */}
-          <div className="text-[15px] text-[#5C5C5C] lg:text-[17px] dark:text-[#C9CACD]">
+          <div className="text-[15px] text-[#5C5C5C] lg:text-[17px] dark:text-[#C9CACD] retro:text-[#282425]">
             <DecryptedText
               text="I'm "
               animateOn="view"

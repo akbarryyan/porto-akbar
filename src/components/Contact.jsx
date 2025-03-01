@@ -4,7 +4,7 @@ import { ImWhatsapp } from "react-icons/im";
 function Contact() {
   return (
     <>
-      <div className="bg-[#F3F4F6] dark:bg-[#181818] py-3 px-3">
+      <div className="bg-[#F3F4F6] dark:bg-[#181818] retro:bg-[#E4D8B4] valentine:bg-[#F2D7E7] py-3 px-3 rounded-md">
         <h1 className="text-lg font-bold dark:text-white">
           Want to hire me as a freelancer? Let&apos;s discuss
         </h1>

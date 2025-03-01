@@ -66,10 +66,10 @@ function Navbar() {
         <div className="flex items-center gap-10 md:hidden">
           <ul className="gap-8 flex">
             <li className="cursor-pointer text-[14px] text-gray-600 dark:text-white retro:text-[#352f44] valentine:text-[#D63384] font-semibold hover:underline">
-              Home
+              <a href="">Quotes Notes</a>
             </li>
             <li className="cursor-pointer text-[14px] text-gray-600 dark:text-white retro:text-[#352f44] valentine:text-[#D63384] font-semibold hover:underline">
-              Projects
+              <a href="">Projects</a>
             </li>
           </ul>
           <IoColorPaletteOutline

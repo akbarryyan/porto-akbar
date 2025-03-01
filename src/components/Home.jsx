@@ -18,7 +18,7 @@ function Home() {
         className="px-4 text-center flex flex-row justify-center items-center"
         id="background"
       >
-        <div className="ml-[-30px] sm:ml-[10px]">
+        <div>
           <h1 className="text-3xl text-[#525252] dark:text-[#DFE0E2] retro:text-[#282425] retro:font-bold tracking-wide font-semibold dark:font-bold valentine:text-[#9F2547]">
             Hello there!
           </h1>
@@ -57,7 +57,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-[-80px]">
+      <div className="mt-[-80px] px-4">
         <div className="mb-12">
           <About />
         </div>

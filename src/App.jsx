@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <div>
-        <div className="px-4 pb-5">
+        <div className="pb-5">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

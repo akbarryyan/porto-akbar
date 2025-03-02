@@ -48,8 +48,7 @@ function Home() {
               />
             </span>
             <DecryptedText
-              text=" from Indramayu, West Java, Indonesia.
-            I'm self-learning person who is interested in developing Discord Bots and Websites."
+              text=" I'm a self-motivated learner with a strong interest in Web Development and Mobile Development. Currently, I'm also exploring Data Science and Machine Learning to expand my technical skills."
               animateOn="view"
               revealDirection="center"
               speed="500"

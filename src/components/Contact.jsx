@@ -2,6 +2,13 @@ import { BiAt } from "react-icons/bi";
 import { ImWhatsapp } from "react-icons/im";
 
 function Contact() {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "6281214980632"; // Ganti dengan nomor WhatsApp tujuan (gunakan format internasional tanpa "+")
+    const message = encodeURIComponent("Halo");
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+    window.open(whatsappURL, "_blank"); // Buka WhatsApp di tab baru
+  };
   return (
     <>
       <div className="bg-[#F3F4F6] dark:bg-[#181818] retro:bg-[#E4D8B4] valentine:bg-[#F2D7E7] py-3 px-3 rounded-md">
@@ -29,7 +36,10 @@ function Contact() {
         <p className="text-[#546173] text-[14px] mt-4 dark:text-white">
           Paste your message and let&apos;s discuss about your projects.
         </p>
-        <button className="bg-[#292929] text-white text-[14px] w-full py-2 px-4 rounded-md mt-5">
+        <button
+          className="bg-[#292929] dark:bg-[#202020] text-white text-[14px] w-full py-2 px-4 rounded-md mt-5"
+          onClick={handleWhatsAppClick}
+        >
           Chat on WhatsApp <ImWhatsapp className="text-[15px] ml-1 inline" />
         </button>
       </div>

@@ -92,7 +92,7 @@ function QuotesNotes() {
             <div className="mt-3">
               <button
                 type="submit"
-                className="w-[98px] text-[13px] flex items-center justify-center text-white py-[4.9px] px-4 rounded-md bg-[#323232] hover:bg-[#292929] disabled:bg-gray-500"
+                className="w-[98px] text-[13px] flex items-center justify-center text-white py-[4.9px] px-4 rounded-md bg-[#323232] hover:bg-[#292929] disabled:bg-gray-500 retro:bg-[#E4D8B4] retro:text-[#352f44] retro:font-semibold valentine:bg-[#F2D7E7] valentine:font-semibold valentine:text-[#D63384]"
                 disabled={loading}
               >
                 {loading ? (

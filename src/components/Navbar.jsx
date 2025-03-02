@@ -97,7 +97,7 @@ function Navbar() {
             style={{ boxShadow: "5px 5px" }}
           >
             <li className="text-[15px] text-gray-700 dark:text-white retro:text-[#352f44] font-semibold cursor-pointer hover:underline valentine:text-[#D63384]">
-              Home
+              <a href="/">Home</a>
             </li>
             <li className="text-[15px] text-gray-600 dark:text-gray-300 retro:text-[#352f44] font-semibold cursor-pointer hover:underline valentine:text-[#D63384]">
               About

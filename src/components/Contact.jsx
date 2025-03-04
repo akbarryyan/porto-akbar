@@ -3,11 +3,11 @@ import { ImWhatsapp } from "react-icons/im";
 
 function Contact() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "6281214980632"; // Ganti dengan nomor WhatsApp tujuan (gunakan format internasional tanpa "+")
+    const phoneNumber = "6281214980632";
     const message = encodeURIComponent("Halo");
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
 
-    window.open(whatsappURL, "_blank"); // Buka WhatsApp di tab baru
+    window.open(whatsappURL, "_blank");
   };
   return (
     <>

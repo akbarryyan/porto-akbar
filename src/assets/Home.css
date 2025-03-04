@@ -21,7 +21,7 @@
   background-size: 30px 30px;
   background-position: center;
   z-index: -1;
-  left: 24px;
+  left: 50px;
   top: -40px;
   animation: moveGrid 5s infinite linear;
 }

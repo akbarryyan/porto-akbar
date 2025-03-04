@@ -16,7 +16,9 @@ function App() {
           </Routes>
         </div>
       </div>
-      <Footer />
+      <div className="mt-6">
+        <Footer />
+      </div>
     </Router>
   );
 }

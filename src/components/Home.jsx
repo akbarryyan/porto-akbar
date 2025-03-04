@@ -60,7 +60,7 @@ function Home() {
         <div className="mb-12">
           <About />
         </div>
-        <div className="mb-12">
+        <div className="mb-12 px-2">
           <TechStack />
         </div>
         <Contact />
